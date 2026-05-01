@@ -8,7 +8,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: process.env.API_BASE_URL,
+        target: 'https://qystech-backend-new.onrender.com',
         changeOrigin: true,
       },
     },
