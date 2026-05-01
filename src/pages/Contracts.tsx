@@ -21,7 +21,12 @@ const Contracts: React.FC = () => {
     endDate: '',
     notes: '',
   });
-  const [renewData, setRenewData] = useState({
+  const [renewData, setRenewData] = useState<{
+    newEndDate: string;
+    newContractPeriod: number | undefined;
+    newFrequency: number | undefined;
+    notes: string;
+  }>({
     newEndDate: '',
     newContractPeriod: undefined,
     newFrequency: undefined,
